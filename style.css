@@ -47,30 +47,29 @@ nav {
 }
 
 /* 📱 Mobile Fixes */
-@media (max-width: 768px) {
+@media (max-width: 480px) {   /* covers ~320px to 450px wide screens */
   #headerdiv {
-    flex-direction: column;     /* stack logo and nav */
-    justify-content: center;    
+    flex-direction: column;    
     align-items: center;
   }
 
   #indexlogo {
-    margin-bottom: 10px; /* spacing between logo and nav */
+    margin-bottom: 10px;
   }
 
   nav {
     display: flex;
-    justify-content: center;   /* center all buttons */
-    flex-wrap: nowrap;         /* keep them in one line */
-    width: auto;
+    justify-content: center;
+    flex-wrap: nowrap; /* keep all buttons in one line */
   }
 
   .btn {
-    font-size: 12px;      /* make text smaller */
-    padding: 6px 10px;    /* smaller button size */
-    margin: 0 5px;        /* small spacing between buttons */
+    font-size: 11px;   /* smaller text */
+    padding: 5px 8px;  /* tighter buttons */
+    margin: 0 4px;     /* small spacing */
   }
 }
+
 
 
 
