@@ -50,7 +50,7 @@ nav {
 @media (max-width: 768px) {
   #headerdiv {
     flex-direction: column;     /* stack logo and nav */
-    justify-content: center;    /* center everything */
+    justify-content: center;    
     align-items: center;
   }
 
@@ -59,10 +59,19 @@ nav {
   }
 
   nav {
-    justify-content: center;
-    width: 100%;
+    display: flex;
+    justify-content: center;   /* center all buttons */
+    flex-wrap: nowrap;         /* keep them in one line */
+    width: auto;
+  }
+
+  .btn {
+    font-size: 12px;      /* make text smaller */
+    padding: 6px 10px;    /* smaller button size */
+    margin: 0 5px;        /* small spacing between buttons */
   }
 }
+
 
 
 /* Banner */
