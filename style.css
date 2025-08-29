@@ -28,8 +28,11 @@ nav {
   text-align: center;
 }
 
-/* Buttons */
 .btn {
+  display: inline-flex;       /* align text neatly */
+  align-items: center;        /* vertical center */
+  justify-content: center;    /* horizontal center */
+  min-width: 100px;           /* 🔥 all buttons at least this wide */
   padding: 8px 14px;
   border: 2px solid red;
   text-decoration: none;
@@ -37,7 +40,6 @@ nav {
   border-radius: 5px;
   font-size: 14px;
   transition: all 0.3s ease;
-  padding-bottom: 15px;
   text-align: center;
 }
 
@@ -64,12 +66,11 @@ nav {
   }
 
   .btn {
-    font-size: 11px;   /* smaller text */
-    padding: 5px 8px;  /* tighter buttons */
-    margin: 0 4px;     /* small spacing */
+    min-width: 70px;   /* smaller buttons but still equal */
+    font-size: 11px;
+    padding: 5px 8px;
   }
 }
-
 
 
 
