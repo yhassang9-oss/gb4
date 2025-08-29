@@ -89,7 +89,7 @@ nav {
   content: "";
   position: absolute;
   top: 0; left: 0;
-  height: 100%; width: 40%;
+  height: 100%; width: 60%;
   background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0));
   z-index: 1;
 }
@@ -160,3 +160,4 @@ html, body {
   padding: 0;
   overflow-x: hidden; /* stops sideways scroll */
 }
+
