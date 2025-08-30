@@ -46,6 +46,7 @@ nav {
 .btn:hover {
   background: red;
   color: white;
+  
 }
 
 /* 📱 Mobile Fixes */
@@ -186,6 +187,7 @@ html, body {
     background-color: red;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: #333 2px;
   }
   
 #activity1 {
@@ -236,10 +238,43 @@ html, body {
   font-size: 1rem;
   color: #333;
 }
-@media(max width:480px){
-  #activity1{
-    width: 80%;
-  }
-  
-}
+/* 🌐 Mobile View */
+@media (max-width: 480px) {
+  #activity1 {
+    flex-direction: column;             /* stack image on top of text */
+    align-items: center;                /* center everything */
+    width: 370px;                         /* fit screen nicely */
+    height: 310px;                       /* let content define height */
+    margin:5px auto; /* center block */
+    padding: 12px;
+    border-width: 1.5px;
+    box-shadow: 3px 5px 12px rgba(0,0,0,0.15);
+    margin-bottom: 40px;
+    
 
+  }
+
+  #A1 {
+    max-width: 360px;                    /* full width image */
+    margin: 0 0 12px 0;                 /* spacing below image */
+    border-radius: 8px;
+  }
+
+  .activity-content {
+    margin: 0;                          /* reset margins */
+    text-align: center;                 /* center-align text */
+  }
+
+  .activity-content h2 {
+    font-size: 1.3rem;
+    color: #b30000;                     /* softer red for friendly tone */
+    margin-bottom: 6px;
+  }
+
+  .activity-content p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #444;
+  }
+}
+/* Make body take full height */
