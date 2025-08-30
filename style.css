@@ -236,3 +236,10 @@ html, body {
   font-size: 1rem;
   color: #333;
 }
+@media(max width:480px){
+  #activity1{
+    width: 80%;
+  }
+  
+}
+
